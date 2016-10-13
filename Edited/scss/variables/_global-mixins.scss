@@ -1,0 +1,23 @@
+
+$handheld-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+
+@mixin handheld {
+	@media (min-width: #{$handheld-width}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+    	@content;
+  	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+    	@content;
+  	}
+}

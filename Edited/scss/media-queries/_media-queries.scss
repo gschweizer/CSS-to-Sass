@@ -1,0 +1,113 @@
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+@include handheld {
+
+.footer-nav {
+  display: none;
+}
+
+}
+
+
+
+@include tablet {
+
+.main-nav li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.main-content div {
+  width: 45%;
+  display: inline-block;
+}
+
+.marketing, 
+.travel, 
+.gallery {
+  float: left;
+  margin: 0 1% 2% 4%;
+}
+
+.search, 
+.map, 
+.calculator {
+  float: right;
+  margin: 0 4% 2% 1%;
+}
+    
+.footer-nav {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 -10px 0 0;
+}
+
+.footer-nav a {
+  text-align: center;
+  padding: 15px;
+  background: $background-color;
+  text-transform: uppercase;
+  color: $heading-color;
+  font-weight: 800;
+}
+
+}
+
+
+
+@include desktop {
+
+.heading {
+ padding-bottom: 120px;
+}
+
+.main-nav li {
+  padding: 0 10px;
+}
+
+.main-content div {
+ width: 30%;
+}
+
+.primary,
+.secondary {
+ float: left;
+}
+
+.primary {
+ margin: 0 0 0 3%;
+ padding: 0;
+}
+
+.secondary {
+ margin: 0 2%;
+ padding: 0;
+}
+
+.tertiary {
+ float: right;
+ margin: 0 3% 0 0;
+ padding: 0;
+}
+
+
+}
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+
+

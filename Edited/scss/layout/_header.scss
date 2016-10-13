@@ -1,0 +1,93 @@
+
+.main-header {
+  @extend %background-color;
+  @include tablet {
+    padding-bottom: 50px;
+  }
+}
+
+.name {
+    @include desktop {
+      float: left;
+    }
+  h1 {
+    font-size: $h1-font-size;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+    margin: 0;
+    @include desktop {
+      padding: 55px 0 0 55px;
+    }
+  }
+}
+
+.main-nav {
+  margin: 0;
+  padding: 40px 0 0;
+  @include tablet {
+    padding: 0 0 30px;
+  }
+  @include desktop {
+    padding-top: 50px;
+    margin-right: 35px;
+    float: right;
+  }
+}
+
+.main-nav {
+  a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    margin: 5px 5%;
+    background: $main-background-color;
+    text-transform: uppercase;
+    color: $heading-color;
+    font-weight: $heavy-font-weight;
+    @include tablet {
+      background-color: $nav-bg-color;
+    }
+    @include desktop {
+      margin: 0;
+    }
+  }
+}
+
+.main-header {
+  p {
+    padding: 0 5%;
+    font-weight: $light-font-weight;
+    margin-bottom: 35px;
+    @include tablet {
+      float: left;
+      width: 55%;
+      text-align: left;
+      padding-right: 0;
+      font-size: $main-font-size;
+      margin: 0;
+    @include desktop {
+      padding-left: 55px;
+      font-weight: 200;
+      float: left;
+    }
+    }
+  }
+}
+
+.profile-image {
+  max-width: 75%;
+  padding: 40px 0 10px;
+  @include tablet {
+    float: right;
+    width: 42%;
+    padding: 0 30px;
+  }
+  @include desktop {
+    padding-right: 60px;
+    float: right;
+    width: 45%;
+  }
+}
+

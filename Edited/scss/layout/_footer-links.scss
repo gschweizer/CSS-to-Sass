@@ -1,0 +1,46 @@
+
+.email {
+  margin: 20px 0 60px 0;
+}
+
+.phone,
+.email {
+  color: $paragraph-color;
+  @extend %light-main;
+  @include tablet {
+    font-size: $main-font-size;
+  }
+}
+
+.phone a,
+.email a {
+  color: $paragraph-color;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.contact-name {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-top: 1px solid $footer-line-color;
+  margin: 0 5% 0;
+}
+
+.contact-name p,
+.top-link {
+  @extend %font-small;
+  color: $heading-color;
+  margin: 0;
+}
+
+.footer-name {
+  float: left;
+}
+
+.top-link {
+  text-transform: uppercase;
+  float: right;
+  @include tablet {
+    display: none;
+  }
+}
